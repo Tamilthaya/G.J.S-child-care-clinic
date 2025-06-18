@@ -1,0 +1,477 @@
+* {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family:'Nunito', sans-serif;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      background: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-weight: bold;
+      font-size: 20px;
+      color: #000;
+    }
+    .logoimg{
+        height: 50px;
+        width: 50px;
+        margin-left: 50px;
+    }
+
+    .logo span {
+      color: #777;
+      font-weight: normal;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      margin-right: 60px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-size: 15px;
+      transition: color 0.3s ease;
+    
+    }
+
+    nav ul li a:hover {
+      color: #00aaff;
+     
+    }
+    .icons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+     .menu-toggle {
+      display: none;
+      font-size: 24px;
+      
+    }
+    @media (max-width: 768px) {
+      nav ul {
+        display: none;
+        flex-direction: column;
+        background: #fff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border: 1px solid #ccc;
+        padding: 10px;
+        
+      }
+     
+      nav ul.show {
+        display: flex;
+      }
+     
+      .menu-toggle {
+        display: block;
+        cursor: auto;
+      }
+       .logoimg{
+        height: 50px;
+        width: 50px;
+        margin-left: 10px;
+        
+    }
+  
+    }
+     .aboutfirstdiv{
+   height: 30vh;
+    background-image: url("https://www.vcarehospital.co.in/storage/2023/05/pediatrics-slide.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    color: white;
+    padding: 100px 0px;
+}
+.aboutfirstdiv h1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.aboutfirstdiv a{
+    font-size: 25px;
+    color: #007cb9;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+
+.clinic-section {
+  padding: 40px 20px;
+}
+
+.clinic-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  flex-wrap: wrap;
+}
+
+.clinic-image {
+  flex: 1 1 400px;
+}
+
+.clinic-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.clinic-content {
+  flex: 1 1 500px;
+}
+
+.welcome {
+  color:#00a3c8;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.clinic-content h1 {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.clinic-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: gray;
+}
+
+
+
+@media (max-width: 768px) {
+  .clinic-container {
+    flex-direction: column;
+    text-align: left;
+    gap: 10px;
+  }
+  .clinic-section {
+  padding: 40px 20px 0px;
+}
+
+  .clinic-content h1 {
+    font-size: 1.6rem;
+  }
+  .clinic-image {
+  flex: 1 1 180px;
+}
+.clinic-content {
+  flex: 1 1 400px;
+}
+}
+
+.medical-section {
+  padding: 40px 20px;
+}
+
+.medical-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+  
+}
+
+.medical-content {
+  flex: 1 1 500px;
+  
+}
+
+.medical-image {
+  flex: 1 1 400px;
+}
+
+.medical-image img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.highlight {
+  color: #00a3c8;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.medical-content h1 {
+  color: #003366;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.medical-content p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: gray;
+}
+
+.medical-content h3 {
+  color: #003366;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.medical-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.medical-content ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 20px;
+  color:gray;
+}
+
+.medical-content ul li::before {
+  content: "»";
+  position: absolute;
+  left: 0;
+  color: #00a3c8;
+  
+}
+
+
+
+
+@media (max-width: 768px) {
+  .medical-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+  .medical-content{
+      text-align: left;
+  }
+  .medical-content h1 {
+    font-size: 1.6rem;
+  }
+  .medical-image {
+  flex: 1 1 200px;
+}
+.medical-section {
+  padding: 0px 20px 40px;
+}
+
+}
+
+.stats-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #00a3c8;
+  color: white;
+  padding: 50px 20px;
+  text-align: center;
+}
+
+.stat-box {
+  flex: 1 1 200px;
+  max-width: 250px;
+  margin: 15px;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  transition: transform 0.3s ease;
+}
+
+.stat-box i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.stat-box h2 {
+  font-size: 32px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.stat-box p {
+  font-size: 16px;
+}
+
+.stat-box:hover {
+  transform: scale(1.05);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+@media (max-width: 768px) {
+  .stat-box {
+    flex: 1 1 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .stat-box {
+    flex: 1 1 100%;
+  }
+}
+
+
+.team-section {
+  text-align: center;
+  padding: 50px 20px 0px;
+  background-color: #f3fbff;
+}
+
+.team-section .content h2 {
+  font-size: 28px;
+  color: #003366;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.team-section .content p {
+  max-width: 600px;
+  margin: 0 auto;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.image-group {
+  margin-top: 40px;
+}
+
+.image-group img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .team-section .content h2 {
+    font-size: 24px;
+  }
+  .team-section .content p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-section {
+    padding: 30px 15px;
+  }
+  .team-section .content h2 {
+    font-size: 20px;
+  }
+}
+  
+.footer {
+  background-image: url(https://invoicecloud.net/wp-content/uploads/2024/08/background.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color:white;
+  padding: 80px 20px ;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box {
+  flex: 1 1 220px;
+}
+.logofooter{
+	height: 40px;
+	width: 40px;
+}
+
+.footer-logo {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.footer-box h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color:white;
+}
+
+.footer-box p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 8px;
+  color:white;
+}
+
+.footer-box a {
+  color:#00a3c8;
+  text-decoration: none;
+}
+
+.social-icons a {
+  margin-right: 10px;
+  color:#00a3c8;
+  font-size: 18px;
+  transition: color 0.3s ease;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 5px 8px;
+}
+
+.social-icons a:hover {
+  color:#00a3c8;
+}
+
+.emergency-number {
+  font-size: 20px;
+  color:#00a3c8;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+  
